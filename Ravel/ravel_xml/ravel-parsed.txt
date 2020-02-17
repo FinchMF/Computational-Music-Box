@@ -1,0 +1,6 @@
+/var/folders/0c/ktnszfs94_j5yczbmylqxwgc0000gn/T/music21/m21-37bcde5176cf14ae12a0965f793fed3a.p
+/var/folders/0c/ktnszfs94_j5yczbmylqxwgc0000gn/T/music21/m21-e9409248e3d320697ec54e20fedffea2.p
+/var/folders/0c/ktnszfs94_j5yczbmylqxwgc0000gn/T/music21/m21-b797504e03858f99e6f375a260a00ffe.p
+/var/folders/0c/ktnszfs94_j5yczbmylqxwgc0000gn/T/music21/m21-0fac914ebbc16fa8e179157e10119418.p
+/var/folders/0c/ktnszfs94_j5yczbmylqxwgc0000gn/T/music21/m21-8c17fae7e115c4f84449e4ebe8178987.p
+/var/folders/0c/ktnszfs94_j5yczbmylqxwgc0000gn/T/music21/m21-6fb92df54d53a330d7091ba01092c596.p
