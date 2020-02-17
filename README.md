@@ -24,16 +24,16 @@ Here I present two examples of AI music (although there have been many sense)
 
 In this project I used MIDI Data to train both the LSTM and the linear SVC. MIDI stands for: Musical Insturment Digitial Interface. Essentially, MIDI is musical notation that a computer can interpret and render. Using PrettyMIDI to visualize the data, here is an example of Chopin's Op. 9 No. 2 in Eb. 
 
-![Chopin's Op. 9 No.2 in Eb](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Chopin/op9no2eb.png)
+![Chopin's Op. 9 No.2 in Eb](./Chopin/op9no2eb.png)
 
 Above you can visualize the music notated, similarly to sheet music. However, rather than standard notation, this is more akin to something you would see in a DAW. DAW stands for: Digital Audio Workspace. Below is how MIDI is represented in an DAW on what is known as a piano roll. 
 
 
-![Chopin's Op. 9 No.2 in Eb on piano roll](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Chopin/daw_chopin.png)
+![Chopin's Op. 9 No.2 in Eb on piano roll](./Chopin/daw_chopin.png)
 
 Additionally, below is the same data in the form of sheet music. In this image, only the first six bars are depicted.
 
-![Chopin's Op. 9 No. 2 in Eb as sheet music](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Chopin/sheet_chopin.png)
+![Chopin's Op. 9 No. 2 in Eb as sheet music](./Chopin/sheet_chopin.png)
 
 
 ## Retrieving the data
@@ -85,7 +85,7 @@ Analyzing MIDI data is the same process as analyzing sheet music. Using Music21 
 
 Below is an example of interval vectors found within a musical corpus.  
 
-![Example of Interval Vector](/Volumes/S190813/Music_Box/LTSM_Generative_Music/int_vector.png)
+![Example of Interval Vector](./int_vector.png)
 
 Essentially, this dataframe depicts the sequence of chords occuring in a peice of music and and describes the quality of the chords by showing which intervals construct the chord. An interval vector can be thought of as anagolous to a word vector. Except rather than the vector describing the words that make up the sentences in the corpus, the vector describes the letters that construct the word. In the metaphor, chords are words, and chord progressions can be interpreted as sentences.
 
@@ -93,13 +93,13 @@ Essentially, this dataframe depicts the sequence of chords occuring in a peice o
 
 Below is an image of the basic Model flow. 
 
-![Model Flow and Evaluation](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Final_Project_2020.png)
+![Model Flow and Evaluation](./Final_Project_2020.png)
 
 ### Breakdown of MIDI transformation into Inputs
 
 #### LSTM inputs
 
-![LSTM Inputs](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Final_Project_2020_(1).png)
+![LSTM Inputs](./Final_Project_2020_(1).png)
 
 In the above example is a representation of the Ravel MIDI being tranformed into a matrix of (128,300). In this instance, the matrix is acting as a piano roll, where 0 - 127 represent the 128 notes found in the MIDI representation, where 0 = C @ octave -1 and 127 = G @ octave 9. 
 
@@ -115,7 +115,7 @@ The three dimensional input for the LSTM takes in account the number of peices p
 
 #### Linear SVC inputs
 
-![Linear SVC Inputs](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Final_Project_2020_(2).png)
+![Linear SVC Inputs](./Final_Project_2020_(2).png)
 
 
 In the above example is a representation of the Ravel MIDI being transformed into chord Ngrams. Each Ngram is represented by a number 0 - 191. To arrive at this number, I used the 16 most common chords and multiplied it against each pitch 0 - 11 of the twelve tone western harmonic system. This allows each of the 192 numbers to equal a unique chord. 
@@ -154,7 +154,7 @@ The classifiers were trained on Bach, Beethoven, Chopin and Debussy. Here is the
         Macro: 95.4%
 
 
-![Linear SVC Ngrams Confusion Matrix](/Volumes/S190813/Music_Box/LTSM_Generative_Music/chordngrams_confusion.png)
+![Linear SVC Ngrams Confusion Matrix](./chordngrams_confusion.png)
 
 ##### What Can We Take Away?
 
@@ -174,7 +174,7 @@ Here is the accuracy of the Linear SVC using Durational Ngrams in addition to Ch
         Micro: 98.63%
         Macro: 98.15%
 
-![Linear SVC Durational Ngrams with Chord Ngrams ](/Volumes/S190813/Music_Box/LTSM_Generative_Music/dur_ngram_confusion.png)
+![Linear SVC Durational Ngrams with Chord Ngrams ](./dur_ngram_confusion.png)
 
 It is interesting to note that overall, the accuracy is better, but when adding the Durational Ngrams, the classifier makes a small amount of errors where it had previously made none. With the Durational Ngrams, the classifer is now nearly perfect with Debussy and has made two errors with Beethoven. Chopin remains to be the most commonly confused comoposer.
 
@@ -185,7 +185,7 @@ LSTM stands for Long Short Term Memory. It is a powerful model, built on the con
 
  Below is an image of how an RNN works: 
 
-![RNN Model Flow](/Volumes/S190813/Music_Box/LTSM_Generative_Music/rnn_chart.png)
+![RNN Model Flow](./rnn_chart.png)
 
 
 
@@ -193,7 +193,7 @@ LSTM's have additional neural layers including networks for memory and discrimin
 
 Below is an image of how LSTM works:
 
-![LSTM Model Flow](/Volumes/S190813/Music_Box/LTSM_Generative_Music/lstm_flow.png)
+![LSTM Model Flow](./lstm_flow.png)
 
 
 ## Bias / Variance Trade Off
@@ -202,7 +202,7 @@ For this project I conceptualized the bias variance trade off as a ven diagram o
 
 Below is a visualization of this ven diagram: 
 
-![Generative/Replicative Trade Off](/Volumes/S190813/Music_Box/LTSM_Generative_Music/Final_Project_2020_(3).png)
+![Generative/Replicative Trade Off](./Final_Project_2020_(3).png)
 
 
 ## RESULTS
