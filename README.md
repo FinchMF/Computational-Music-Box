@@ -207,7 +207,7 @@ Below is a visualization of this ven diagram:
 
 ## RESULTS
 
-The result of this project is the ability to IMPORT composer bots that that produce 3 minute piano composers. Both the audio and sheet music is provided. 
+The result of this project is the ability to IMPORT composer bots that produce 3 minute piano composers. Both the audio and sheet music is provided. 
 
 Further updates in the bots and organization will take place over the next 48 hours. Along with the updates to the file structures, there will be a description of applications for the bots as well as the ability to pip install the modules. 
 
