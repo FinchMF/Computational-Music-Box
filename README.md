@@ -209,5 +209,5 @@ Below is a visualization of this ven diagram:
 
 The result of this project is the ability to IMPORT composer bots that produces 3 minute piano composers. Both the audio and sheet music is provided. 
 
-Further updates in the bots and organization will take place over the next 48 hours. Along with the updates to the file structures, there will be a description of applications for the bots as well as the ability to pip install the modules. 
+Further updates in the bots and organization will take place. The end goal is to develop a python package that can be downloaded to generate midi files directly to your computer. 
 
