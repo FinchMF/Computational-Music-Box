@@ -6,19 +6,19 @@ For this project I asked myself the age old question: Can AI generate new music?
 
 The results of this project: 
 
-    1. Developed 5 LSTM models trained respectively on piano works by Bach, Beethoven, Chopin, Ravel and Debussy. The output was 3 minute piano works.
+1. Developed 5 LSTM models trained respectively on piano works by Bach, Beethoven, Chopin, Ravel and Debussy. The output was 3 minute piano works.
     
-    2. Developed a linear SVC as a second evaluation metric to double check the output composition's similarity to the respective composer each model was trained on. 
+2. Developed a linear SVC as a second evaluation metric to double check the output composition's similarity to the respective composer each model was trained on. 
 
-    3. Modularized and importable composer bots that generate functional piano music and self grade their simularity to the actual composer. The music is output in both audio and sheet music once the scripts are run.  
+3. Modularized and importable composer bots that generate functional piano music and self grade their simularity to the actual composer. The music is output in both audio and sheet music once the scripts are run.  
 
 ## Brief History of AI music
 
 Here I present two examples of AI music (although there have been many sense)
 
-    In 1957 the first work composed entirely by AI was a titled ‘Illiac Suite for String Quartet’ by Lejaren Hiller & Leonard Isaacson @ University of Illinois at Urbana-Champaign. Illiac stood for: Illinois Automatic Computer. The approach was based in an algorhithmic sequence programmed by the composer for the Illiac to perform. This method was an execution of a linear program.
+In 1957 the first work composed entirely by AI was a titled ‘Illiac Suite for String Quartet’ by Lejaren Hiller & Leonard Isaacson @ University of Illinois at Urbana-Champaign. Illiac stood for: Illinois Automatic Computer. The approach was based in an algorhithmic sequence programmed by the composer for the Illiac to perform. This method was an execution of a linear program.
 
-    It wasn't until the 1980s when 'Experiments in Musical Intelligence', developed by David Cope @ University of California, Santa Cruz was used. These were the first models to analyze existing music and generate new pieces using learned rules. This method used a non-linear training and generating process that recognized a rule based system, but added in an elememt of randomness. This allowed for model to generate new peices within a style 'on its own' rather than simply carrying out a set of instructions. 
+It wasn't until the 1980s when 'Experiments in Musical Intelligence', developed by David Cope @ University of California, Santa Cruz was used. These were the first models to analyze existing music and generate new pieces using learned rules. This method used a non-linear training and generating process that recognized a rule based system, but added in an elememt of randomness. This allowed for model to generate new peices within a style 'on its own' rather than simply carrying out a set of instructions. 
 
 ## What the data is and how to visualize it
 
